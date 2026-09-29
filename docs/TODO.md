@@ -12,9 +12,9 @@
 - [x] **1. Локальный репозиторий.** Ветка `main`, `origin` → `https://github.com/ezshua/DiLamp.git`, `.gitignore` создан, удалённый `Initial commit` подтянут через `git pull --rebase --allow-unrelated-histories`.
   - *Приёмка:* `git remote -v` показывает origin, `git status` чист, `debug.log` не отслеживается. Коммиты и push — только вручную владельцем (§3.5 `AGENTS.md`).
 
-- [ ] **2. `platformio.ini` с тремя env.** `nano` (основной), `lgt` (заготовка), `native` (тесты). Первая сборка скачает toolchain'ы `atmelavr` и `lgt8f`.
+- [ ] **2. `platformio.ini` с тремя env.** `nano` (основной), `lgt` (заготовка), `native` (тесты). Платформы `atmelavr` и `lgt8f` уже установлены.
   - *Приёмка:* `pio run -e nano` доходит до компиляции, все три env видны в VS Code в статус-баре.
-  - ⚠️ Нужна сеть: toolchain'ы ещё не скачаны.
+  - ✅ Сеть не нужна: toolchain'ы `atmelavr` и `lgt8f` уже скачаны (проверено 29.09.2026).
 
 - [ ] **3. `include/config.h`.** Пины, счётчики, лимиты, раскладка колец. Только `<stdint.h>`, без `Arduino.h`.
   - *Приёмка:* все настройки в одном месте; файл компилируется в `env:native` без Arduino-заголовков.

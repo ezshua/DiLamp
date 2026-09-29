@@ -9,7 +9,7 @@
 ## Требования
 
 - VS Code с расширением **PlatformIO IDE**
-- PlatformIO Core 6.x (проверено на 6.1.19)
+- PlatformIO Core 6.x (проверено на 6.2.0)
 - Плата **Arduino Nano** на ATmega328P, 16 МГц
 - Сеть при первой сборке — скачиваются toolchain'ы и библиотеки
 

@@ -14,7 +14,7 @@
 |---|---|
 | Язык | C++17, без динамической памяти |
 | Платформа | AVR, ATmega328P, 16 МГц, 30 КБ flash / 2 КБ SRAM |
-| Сборка | PlatformIO Core 6.1.19, платформа `atmelavr` |
+| Сборка | PlatformIO Core 6.2.0, платформа `atmelavr` |
 | IDE | VS Code + PlatformIO IDE Extension |
 | LED-библиотека | Adafruit_NeoPixel 1.12 |
 | Тесты | Unity, нативное окружение `env:native` |
@@ -117,10 +117,10 @@ pio run -e nano -t size         # отчёт по памяти
 |---|---|---|
 | VS Code | `...\Microsoft VS Code\bin\code.cmd` | есть |
 | PlatformIO IDE | `platformio.platformio-ide-3.3.4` | есть |
-| PlatformIO Core 6.1.19 | `C:\Users\SpecCP\.platformio\penv\Scripts\pio.exe` | есть, **единственный** |
+| PlatformIO Core 6.2.0 | `C:\Users\SpecCP\.platformio\penv\Scripts\pio.exe` | есть, **единственный** |
 | Платформа `atmelavr` | `~/.platformio/platforms/atmelavr` | есть |
 | Пакеты | toolchain-atmelavr, framework-arduino-avr, tool-avrdude, tool-scons, tool-cppcheck, contrib-piohome | есть |
-| Платформа `lgt8f` | — | **нет**, понадобится при первой сборке `env:lgt` |
+| Платформа `lgt8f` | `~/.platformio/platforms/lgt8f` | есть, 1.0.3 (реестр `darkautism/lgt8f`) |
 | C/C++ (IntelliSense) | `ms-vscode.cpptools-1.34.4` | есть |
 | Markdown lint | `davidanson.vscode-markdownlint-0.62.1` | есть |
 
