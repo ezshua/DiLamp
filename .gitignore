@@ -1,0 +1,24 @@
+# ---- PlatformIO ----
+.pio/
+.pioenvs/
+.piolibdeps/
+.clang_complete
+.gcc-flags.json
+
+# ---- VS Code ----
+.vscode/
+!.vscode/extensions.json
+
+# ---- Артефакты сборки ----
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+*.eep
+
+# ---- ОС и временное ----
+Thumbs.db
+.DS_Store
+*.log
+debug.log
