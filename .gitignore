@@ -6,8 +6,14 @@
 .gcc-flags.json
 
 # ---- VS Code ----
-.vscode/
+# Локальное состояние игнорируем, общие настройки проекта — нет:
+# .vscode/settings.json хранит стиль clang-format, он нужен всем.
+.vscode/*
+!.vscode/settings.json
 !.vscode/extensions.json
+
+# ---- Генерируемое (пересобраать перега раза) ----
+compile_commands.json
 
 # ---- Артефакты сборки ----
 *.o

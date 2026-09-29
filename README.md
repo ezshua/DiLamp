@@ -28,7 +28,6 @@
 pio run -e nano                 # сборка
 pio run -e nano -t upload       # прошивка
 pio device monitor -b 115200   # монитор
-pio test -e native              # нативные тесты, без железа
 pio run -e nano -t size         # отчёт по памяти
 ```
 
@@ -72,15 +71,14 @@ pio run -e nano -t size         # отчёт по памяти
 
 ```
 ├── AGENTS.md            правила работы для агента
-├── platformio.ini       env: nano, lgt, native
+├── platformio.ini       env: nano, lgt
 ├── docs/
 │   ├── PLAN.md          план проекта и обоснования
 │   ├── TODO.md          задачи с критериями приёмки
 │   ├── hardware.md      схема питания, расчёт тока, BOM
 │   └── wiring.md        таблица пинов и порядок колец
 ├── include/             заголовки; config.h — все настройки
-├── src/                 реализация; effects/ — эффекты
-└── test/                нативные тесты (Unity)
+└── src/                 реализация; effects.cpp — все эффекты
 ```
 
 ## Железо

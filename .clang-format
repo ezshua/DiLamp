@@ -1,0 +1,39 @@
+---
+# Стиль проекта DiLamp: встраиваемый C++ для ATmega328P.
+# База — Google, с правками под встроенный код:
+#  - 2 отступа, читаемая длина строки до 100;
+#  - короткие конструкции НЕ сжимаются в одну строку — в лампе важна читаемость;
+#  - зафиксировано выравнивание указателей (не выводится автоматически),
+#    иначе clang-format переформатирует код при смене соседних строк.
+
+BasedOnStyle: Google
+Language: Cpp
+Standard: c++17
+
+IndentWidth: 2
+ContinuationIndentWidth: 4
+AccessModifierOffset: -2
+ColumnLimit: 100
+
+BreakBeforeBraces: Attach
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+PointerAlignment: Left
+DerivePointerAlignment: false
+ReferenceAlignment: Pointer
+
+IndentCaseLabels: true
+IndentPPDirectives: AfterHash
+SpacesBeforeTrailingComments: 2
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+IncludeBlocks: Preserve
+SortIncludes: CaseSensitive
+AlignConsecutiveAssignments: false
+AlignTrailingComments: true
+ReflowComments: true
