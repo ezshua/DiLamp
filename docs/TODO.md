@@ -9,8 +9,8 @@
 
 ## Этап 1 — Фундамент
 
-- [x] **1. Локальный репозиторий.** Ветка `main`, `origin` → `https://github.com/ezshua/DiLamp.git`, `.gitignore` создан, коммит `4dd8263`.
-  - *Приёмка:* `git remote -v` показывает origin, `git status` чист, `debug.log` не отслеживается. Push не выполняется.
+- [x] **1. Локальный репозиторий.** Ветка `main`, `origin` → `https://github.com/ezshua/DiLamp.git`, `.gitignore` создан, удалённый `Initial commit` подтянут через `git pull --rebase --allow-unrelated-histories`.
+  - *Приёмка:* `git remote -v` показывает origin, `git status` чист, `debug.log` не отслеживается. Коммиты и push — только вручную владельцем (§3.5 `AGENTS.md`).
 
 - [ ] **2. `platformio.ini` с тремя env.** `nano` (основной), `lgt` (заготовка), `native` (тесты). Первая сборка скачает toolchain'ы `atmelavr` и `lgt8f`.
   - *Приёмка:* `pio run -e nano` доходит до компиляции, все три env видны в VS Code в статус-баре.
